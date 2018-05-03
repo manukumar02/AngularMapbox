@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import * as mapboxgl from 'mapbox-gl';
+import { Map } from 'mapbox-gl/dist/mapbox-gl';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor() {
+    console.log(mapboxgl);
+  }
 }
